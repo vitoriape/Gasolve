@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #bfbfbf;
+            }
+        </style>
+        <title>Gasolve 1.0 | Calcula Combustível</title>    
+
+        <script type="text/javascript">
+            function gasolveForm(frm){
+
+            // [Insere do Valor do Etanol. Caso o campo esteja vazio, seja nulo ou menor que 1, não prossegue o script]
+            if (frm.ethanol.value == "" || 
+                frm.ethanol.value == null || 
+                frm.ethanol.value < 1){
+        
+                alert("Por favor, insira um valor válido para o litro de etanol.");
+                frm.ethanol.focus();
+                return false;
+            }
+                 
+            // [Insere do Valor da Gasolina. Caso o campo esteja vazio, seja nulo ou menor que 1, não prossegue o script]
+            if (frm.gasoline.value == "" ||
+                frm.gasoline.value == null ||
+                frm.gasoline.value.lenght < 1){
+        
+                alert("Por favor, indique um valor válido para o litro de gasolina.");
+                frm.gasoline.focus();
+                return false;
+            }
+
+            /*[Seleção das opções de Consumo Médio]
+                [6.0km/l a 7.0km/l]
+                [7.0km/l a 8.0km/l]
+                [8.0km/l a 9.0km/l]
+                [9.0km/l a 10km/l]
+                [mais de 10km/l]*/
+
+            if (frm.consume.value == ""){
+                alert("Por favor, informe o consumo médio do seu veículo.");
+                frm.consume.focus();
+                return false;
+            }
+
+            // [Calcula qual combustível é mais vantajoso e armazena em resultValue]  
+            operation = parseFloat(frm.ethanol.value) / parseFloat(frm.gasoline.value)
+                if (operation < 0.7){
+                    result = "De acordo com os dados fornecidos, vale mais a pena abstecer com etanol."
+
+                } else if (operation > 0.7){
+                    result = "De acordo com os dados fornecidos, vale mais a pena abstecer com gasolina."
+
+                } else if (operation = 0.7){
+                    result = "De acordo com os dados fornecidos, tanto faz abastecer com gasolina ou com etanol."
+                }
+
+                document.getElementById("resultValue").innerHTML = result;
+                
+                var logicalchoose = confirm("As informações foram registradas e calculadas com sucesso!\n\n"  + result + "\n\n" + "Caso deseje calcular novamente, clique em OK. \nSenão, basta clicar em Cancelar :)");
+                
+                if (logicalchoose == true){
+                    return gasolveForm;
+                }else {
+                    alert("Caro usuário, \n\n\n\n" + "Esta é uma aplicação teste desenvolvida por VPA Tecnologia. Meus agradecimentos pela sua contribuição.\n\n\n\n");
+                }
+            }        
+        </script>
+    </head>
+    <body>
+        <div style="text-align:center">
+        <div class="w3-content">
+            <img class="mySlides" src="https://snipboard.io/ylMOC3.jpg" alt="custom_html_banner1" style="width:100%">
+        </div>
+        <hr size="4" width="100%">
+
+        <form name="frmGasolve" method="post" action="#" onsubmit="return gasolveForm(this);">
+            <p> Olá, sou seu assistente de escolha de abastecimento! </p>
+            <p> Estou aqui para te ajudar a escolher entre abastecer com gasolina ou com etanol. </p>
+            <p> Para calcular usando o Gasolve, preencha os campos abaixo e clique no botão Calcular: </p>
+            <hr size="4" width="100%">
+            </br>
+
+            <p>Valor do litro de Etanol: R$ <input type="text" name="ethanol" id="ethanol" /></p>
+            <p>Valor do litro da Gasolina: R$ <input type="text" name="gasoline" id="gasoline" /></p>
+
+            <p>
+                <img src="https://snipboard.io/zNwMhK.jpg"
+                width="25"
+                height="25">
+
+                Consumo Médio:
+            <select name="consume">
+                <option value="">Selecione o consumo médio do seu carro</option>
+                <option value="sixseven">6.0km/l a 7.0km/l</option>
+                <option value="seveneight">7.0km/l a 8.0km/l</option>
+                <option value="eightnine">8.0km/l a 9.0km/l</option>
+                <option value="nineten">9.0km/l a 10km/l</option>
+                <option value="plusten">mais de 10km/l</option>
+            </select>
+            </br>
+            </br>
+            </p>
+
+            <label><input type="submit" name="sbt" value="Calcular"/></label></p>
+            </br>
+
+            <hr size="4" width="100%">
+
+            <a href="https://www.linkedin.com/in/vitoria-pecanha/"><img src="https://snipboard.io/zNwMhK.jpg" class="media-object  img-responsive img-thumbnail"></a>
+        </form>
+        <p id="resultValue"></p>
+        </div>
+    </body>
+</html>
