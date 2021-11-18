@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Gasolve" title="#Gasolve" src="https://github.com/vitoriape/gasolve/blob/main/images/gasolve-banner.png" width="900" height="250"/>
+    <img alt="Gasolve" title="#Gasolve" src="https://github.com/vitoriape/gasolve/blob/main/images/gasolve-banner.png" width="900" height="350"/>
 </h1>
 
 <p align="center">
