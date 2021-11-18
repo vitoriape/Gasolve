@@ -19,13 +19,14 @@
 
 ---
 
-<p align="center">
- ◽ <a href="#-sobre">Sobre</a> |
- <a href="#-ferramentas">Ferramentas</a> | 
- <a href="#-recursos">Recursos</a> | 
- <a href="#-instalação">Instalação</a> |
- <a href="#-autor">Autor</a> ◽
-</p>
+Index
+=================
+<!--ts-->
+   * [Sobre](#-sobre)
+   * [Ferramentas](#-ferramentas)
+   * [Recursos](#-recursos)
+   * [Instalação](#-instalação)
+   * [Autor](#-autor)
 
 ### 📌 Sobre
 
@@ -71,13 +72,7 @@ $ start gasolve.html
 
 ### 💡 Autor
 
-<a href="https://www.linkedin.com/in/vitoria-pecanha/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/55922652?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Vitória Peçanha</b></sub></a> <a href="https://www.linkedin.com/in/vitoria-pecanha/" title="LinkedIn"></a>
-
-
-Feito por Vitória Peçanha 📚 Entre em contato!
-
-
-[![Linkedin Badge](https://img.shields.io/badge/-Vitória-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vitoria-pecanha/)](https://www.linkedin.com/in/vitoria-pecanha/) [![Gmail Badge](https://img.shields.io/badge/-vitoriapecanha.log@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:vitoriapecanha.log@gmail.com)](mailto:vitoriapecanha.log@gmail.com)
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/vitoriape"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/55922652?v=4" width="100px;" alt=""/><br /><sub><b>Vitória Peçanha</b></sub></a></td> 
+</table>
