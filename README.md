@@ -19,7 +19,7 @@
 
 ---
 
-Index
+Índice
 =================
 <!--ts-->
    * [Sobre](#-sobre)
@@ -55,6 +55,7 @@ $ git clone <https://github.com/vitoriape/gasolve>
 
 # Acesse a pasta do projeto pelo terminal
 $ cd gasolve
+
 
 # Opção 1: Abra o arquivo gasolve.html para editar o projeto completo
 $ start gasolve.html
